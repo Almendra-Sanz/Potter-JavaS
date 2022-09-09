@@ -1,44 +1,97 @@
-function hello(persona, hogar) {
-  alert ("Bienvenide a ollivander " + persona + " de " + hogar)
+function hello(persona) {
+  alert ("Bienvenide a ollivander " + persona + ", aqui encontraras una enciclopedia de hechizos colaborativa")
 }
 
 function datos() {
     let nombre = prompt ("¿Cual es tu nombre?")
-    let casa = prompt ("¿A que casa de Hogwarts perteneces?")
-    hello(nombre, casa)
+    hello(nombre)
 }
 
 
-function consulta() {
-    let respuesta = prompt("¿Desea elegir otro hechizo?" + "\nSi" + "\nNo")
-    return respuesta
-}
+class Hechizo {
+    constructor (nombre, funcion) {
+        this.nombre = nombre,
+        this.funcion = funcion
 
-function hech() {
-    let hechizo =prompt("Elige el hechizo que deseas" + "\nAccio" + "\nConfundus" + "\nAlohomora");
-    return hechizo
-
-}
-
-
-datos()
-let hechizo = hech()
-while (hechizo.toLowerCase() == "Accio" || "Confundus" || "Alohomora") {
-    if (hechizo == "accio" || hechizo == "Accio") {
-    alert("Se utiliza para atraer un objeto sea cual sea la distancia a la que esté"); 
-} else if (hechizo == "confundus" || hechizo == "Confundus") {
-    alert("Utilizado para causar confusión en las personas o encantar objetos")
-} else if (hechizo == "Alohomora" || hechizo == "alohomora") {
-    alert("Hechizo utilizado para abrir cerraduras cerradas con llave")
-} else {
-    alert("Hechizo no encontrado");
-}
-
-let pregunta = consulta()
-    if (pregunta.toLowerCase() == "si") {
-        hechizo =prompt("Elige el hechizo que deseas" + "\nAccio" + "\nConfundus" + "\nAlohomora");
-    } else {
-        alert ("Travesura terminada")
-        break
     }
+    
+    mostrar() {
+        console.log(`El hechizo ${this.nombre} se utiliza para ${this.funcion}`)
+    }
+}
+
+const hechizo1 = new Hechizo ("Accio", "para atraer un objeto sea cual sea la distancia a la que esté")
+const hechizo2 = new Hechizo ("Alohomora","abrir cerraduras cerradas con llave")
+const hechizo3 = new Hechizo ("Confundus","causar confusión en las personas o encantar objetos")
+const hechizo4 = new Hechizo ("Aqua eructo","generar un potente chorro de agua que salga de la punta de la varita, puede ayudar a conbatir incendios")
+const hechizo5 = new Hechizo ("Avis", "invocar a una bandada de aves")
+const hechizo6 = new Hechizo ("Anapneo", "despejar las vias respiratorias de las personas")
+const hechizo7 = new Hechizo ("Avada Kedavra", "matar a cualquier ser vivo que este a su alcance.Es una de las maldiciones imperdonables y no posee contra hechizo.")
+
+
+const enciclopedia = [hechizo1, hechizo2, hechizo3, hechizo4, hechizo5, hechizo6, hechizo7]
+
+function explorar(array) {
+    alert("Abra la consola para ver los hechizos y sus funciones")
+    array.forEach((Hechizo) => {
+        Hechizo.mostrar()
+        
+    })
+    } 
+
+function buscarNombre(array) {
+    let buscar = prompt("Ingrese el nombre del hechizo que desea encontrar")
+    let nombreEncontrado = enciclopedia.find((hechizo)=> hechizo.nombre.toLowerCase() == buscar.toLowerCase())
+    if(nombreEncontrado == undefined){
+        alert("El hechizo no se encuentra disponible por el momento")
+    }else{
+        alert("El hechizo se encuentra en la enciclopedia")
+        alert(`El hechizo ${nombreEncontrado.nombre} se utiliza para ${nombreEncontrado.funcion}`)
+       
+    }
+}
+
+function incluirHechizo(array) {
+    let nombreIn = prompt("Ingrese el nombre del hechizo")
+    let funcionIn = prompt ("Describi la funcion del hechizo ingresado anteriormente ")
+    let hechizoNuevo = new Hechizo (enciclopedia.length+ nombreIn, funcionIn)
+    array.push(hechizoNuevo)
+    console.log(hechizoNuevo)
+}
+
+function susDeseos() {
+    let opcion = parseInt (prompt(`Ingrese el numero correspondiente a la opcion que desea realizar:
+    1 - Explorar la enciclopedia de hechizos
+    2 - Encontrar un hechizo por nombre
+    3- Agregar un nuevo hechizo a la enciclopedia
+    4 - Si desea marcharse`))
+    menu(opcion)
+}
+
+function menu(opcionSeleccionada){
+    switch(opcionSeleccionada){
+        
+        case 1:
+            explorar(enciclopedia)
+      	break 
+   	    case 2: 
+           buscarNombre(enciclopedia)
+      	break 
+   	    case 3: 
+           incluirHechizo(enciclopedia) 
+      	break
+        case 4: 
+        salir = true   
+        break
+        
+   	    default: 
+      	alert(`Ingrese una opción correcta`)
+    }
+}
+datos()
+susDeseos()
+let salir 
+while(salir != true){
+    susDeseos()
+    
 }

@@ -1,0 +1,49 @@
+/* font-family: 'DM Serif Display', serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+body {
+    background-color:#33223B;
+}
+h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 5vh;
+
+}
+
+p {  font-size: 3vh;
+      margin-top: 6vh;
+}
+ul {
+        font-size: 3vh;
+        margin-top: 6vh;
+        font-family:'Raleway', sans-serif;
+        list-style: none;
+        position: relative; left: 2vh; bottom: 85vh;    
+        color: darkgray;
+}
+
+
+
+.titulos {
+    font-family:'Raleway', sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: space-evenly;
+    color: darkgrey;
+
+    
+}
+
+.forma {
+    width: 140vh;
+    height: 130vh;
+   background-color:#435E7D;
+    margin: auto;   
+    border-radius: 15%;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    position: relative; left: 5vh; top: 5vh;
+}
+
+

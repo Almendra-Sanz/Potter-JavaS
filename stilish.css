@@ -46,4 +46,22 @@ ul {
     position: relative; left: 5vh; top: 5vh;
 }
 
+li {
+    margin-bottom: 3vh;
+}
 
+div {
+    display: flex;
+    justify-content:end;
+    margin-right: 8%;
+}
+div .btnMenu {
+    color: darkgray;
+    background-color:#33223B;
+    border-color: #402a4b;
+    border-radius: 2vh;
+    font-size: 3vh;
+    font-family:'Raleway', sans-serif;
+
+
+}

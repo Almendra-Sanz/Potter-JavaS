@@ -1,8 +1,12 @@
 
 
+
 function hello(persona) {
     alert ("Bienvenide a ollivander " + persona + ", aqui encontraras una enciclopedia de hechizos colaborativa")
   }
+
+  
+
   
   function datos() {
       let nombre = prompt ("¿Cual es tu nombre?")
@@ -16,11 +20,12 @@ function hello(persona) {
           this.funcion = funcion
   
       }
-      
+   
       mostrar() {
-        let lista = document.createElement("ul");
-        lista.innerHTML =(`El hechizo ${this.nombre} se utiliza para ${this.funcion}`) ; 
-        document.body.append(lista);
+        let lista = document.getElementById("lista")
+        let hechizo = document.createElement("li");
+        hechizo.innerHTML =(`El hechizo ${this.nombre} se utiliza para ${this.funcion}`) ; 
+        lista.append(hechizo);
       }
   }
   
@@ -34,7 +39,9 @@ function hello(persona) {
   
   
   const enciclopedia = [hechizo1, hechizo2, hechizo3, hechizo4, hechizo5, hechizo6, hechizo7]
-  
+ 
+ 
+
   function explorar(array) {
       array.forEach((Hechizo) => {
           Hechizo.mostrar()
@@ -59,13 +66,35 @@ function hello(persona) {
   function incluirHechizo(array) {
       let nombreIn = prompt("Ingrese el nombre del hechizo")
       let funcionIn = prompt ("Describi la funcion del hechizo ingresado anteriormente ")
-      let hechizoNuevo = new Hechizo (nombreIn, funcionIn)
-      array.push(hechizoNuevo)
-      console.log(hechizoNuevo)
-      susDeseos()
+      let hechizoNuevo = new Hechizo (array.length+1, nombreIn, funcionIn)
+      let confirmacion = prompt (`${nombreIn}, ${funcionIn}
+        Confirma que quiere incluir el hechizo a la enciclopedia? Si/No`) 
+         if (confirmacion.toLowerCase() != "si") {
+            susDeseos()
+       
+        } else {
+            array.push(hechizoNuevo)
+            console.log(hechizoNuevo)
+        let otroHechizo = prompt ("Desea ingresar otro hechizo?")
+        if (otroHechizo != "si") {
+            susDeseos()
+        } else {
+            incluirHechizo()
+        }
+            
+
+        }
+   
   }
+
+  const botoncito = document.querySelector("button");
+  botoncito.addEventListener("click", susDeseos)
+  
   
   function susDeseos() {
+
+
+
       let opcion = parseInt (prompt(`Ingrese el numero correspondiente a la opcion que desea realizar:
       1 - Explorar la enciclopedia de hechizos
       2 - Encontrar un hechizo por nombre
@@ -94,7 +123,7 @@ function hello(persona) {
    
   
   datos()
-  susDeseos()
+  
   
   
 

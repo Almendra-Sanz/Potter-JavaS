@@ -8,31 +8,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=PT+Sans&family=Raleway&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Cat-rot</title>
 </head>
 <body>
+    <header>
     <section class="titulos">
-       <h1>Enciclopedia mágica</h1> 
-        <p>En este libro hechiceros y hachiceras de todo el mundo comparten sus conocimientos</p>
+       <h1>Cat-rot guide</h1> 
+        <h2>here you could find the tarot cards, and their meanings</h2>
+        <form>
+            <input type="text" id="buscar" placeholder="Find">
+            <button type="button" id="btnBuscar">Find</button>
+        </form>
+        <div class="cajaForm"> 
+            <div id="boton">
+                <button id="btnExplorar" class="btnes">Explore</button>  <br><br>  
+                    <button id="btnOcultar" class="btnes">Hide</button>  <br><br>  
+            </div>
     </section>
-    <div id="boton">
-        <button class="btnMenu" onclick="susDeseos()" >Abrir menu</button>  <br><br>  
-          
+    <div id="opciones">
+   
+        <div>
+      
+          <form>
+              <p>If you couldn't find the card you were looking for,
+                <br> you can add it here</p>
+              <input type="text" id="nameIn" name="nombreIn" placeholder="Card name"><br><br>
+              <input type="text" id="funcionIn" name="funcionIn" placeholder="Explanation"><br><br>
+          <button type="button" id="btnGuardar">Save</button>
+          </form>
+    
+          </div>
+    
+</header> 
 
-    </div>
-     
+    
 
-
-
-    <div class="forma"></div>
-<div class="lista">
-    <ul id="lista">
-        <li></li>
-    </ul>
-</div>
-
-
-</body>
+<div id="listaCartas"></div>
+    
+</body>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="main.js"></script>
 </html>
 

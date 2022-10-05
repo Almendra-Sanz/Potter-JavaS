@@ -47,6 +47,7 @@ header {
     margin-left: 5%;
     margin-top: 2%;
     
+    
 }
 
 
@@ -94,3 +95,12 @@ input {
 #funcionIn {
     height: 20vh;
 }
+
+.swal2-popup {
+    font-size: 2vh !important;
+  }
+
+  .swal2-title {
+    font-family:'Raleway', sans-serif ;
+}
+

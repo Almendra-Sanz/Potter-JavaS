@@ -1,5 +1,4 @@
 
-
 class Card {
   constructor (nombre, fun, img) {
       this.nombre = nombre,
@@ -120,7 +119,21 @@ btnOcultar.addEventListener(`click`, () => {
  function buscar() {
   let resultado = enciclopedia.filter ((card)=> card.nombre.toLowerCase().includes(inputBucar.value.toLowerCase()))
   if (resultado == 0){
-    alert ("El nombre ingresado no se encuentra")
+    Swal.fire({
+      title: 'El nombre ingresado no se encuentra',
+      width:500,
+      color:'#000000',
+      font:'Georgia, serif', 
+      background:'#FFFFFF',
+      confirmButtonColor:'#000000',
+      imageUrl: 'assets/gatotaza1.png',
+      imageHeight:160,
+      
+
+
+    })
+
+    
     inputBucar.value = ""
   } else {
     listaCartas.innerHTML =""
@@ -133,3 +146,5 @@ btnOcultar.addEventListener(`click`, () => {
   buscar()
   inputBucar.value = ""
    })
+
+   

@@ -1,0 +1,50 @@
+[
+
+{
+"nombre":"THE FOOL",
+"fun":"The Fool, the first card in the tarot, is a symbol of naivety and childlike wonder. This card is eager and ready to take a risk and start a new journey, always with a youthful spirit,astrologer and tarot practitioner Imani Quinn tells Bustle. Its also a reminder to proceed with caution", 
+"img":"Fool.jpg"
+},
+
+{
+       "nombre":"THE MAGICIAN",
+    "fun":"The Magician reminds you of your ability to design your dream life. “You have all of the tools you need to manifest your desires, be ready to use whichever one is called for at any moment,” says Quinn.",
+    "img":"magician.jpg"
+ },
+
+{
+    "nombre":"THE EMPEROR",
+    "fun":"When the Emperor shows up, it’s highlighting an authoritative power or a tendency to be in control. “There's often a need to parent yourself when this card shows up. It's a powerful sign that asks you to lean into your sense of security, stability, and structure,” explains Marquardt.",
+    "img":"emperor.jpg"
+},
+
+{
+    "nombre":"THE EMPRESS",
+    "fun":"If the Empress has made an appearance, you’re being asked to step into your creative and sexual power. “It's a perfect card for self-love, but it also might show the need to nurture something very important to you, whether it's a child, a relationship or a creative project,” Ryan Marquardt, an astrologer and tarot practitioner, tells Bustle.",
+    "img":"empress.jpg"
+},
+
+{
+    "nombre":"THE HIEROPHANT",
+    "fun":"The Hierophant's stern and austere energy is about carrying legacy and traditions. “You might be asked to stick to the plan and not skip over any steps,” explains Marquardt. “It also has a lot to do with your belief systems, religious influences, and philosophies on life.”",
+    "img":"hierophant.jpg"
+},
+
+{
+"nombre":"THE LOVERS",
+"fun":"Sure, the Lovers can indicate a union or a new boo on the horizon, “but it's really about establishing harmony when faced with a big choice in life,” says Marquardt. Ultimately, this card acknowledges that there’s an important decision that needs to be made.", 
+"img":"lovers.jpg"
+},
+
+{
+    "nombre":"THE PRIESTESS",
+    "fun":"The High Priestess invites you to follow your gut and accept what your inner knowing is already telling you. “Trust your intuition and see it as your superpower, allow yourself and others to move from an empowered intuitive place,” Quinn explains",
+    "img":"priestess.jpg"
+},
+
+{
+    "nombre": "THE STRENGHT",
+    "fun": "While the Strength card symbolizes grit and power,it’s also about generosity. “The Strength card is a very positive one that asks you to stay compassionate with yourself and others, and give where you can, because when you give of yourself you'll ultimately receive more in return,” Marquardt explains.",
+    "img": "strength.jpg"
+}
+]

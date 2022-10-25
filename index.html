@@ -13,34 +13,36 @@
 <body>
     <header>
     <section class="titulos">
-       <h1>Cat-rot guide</h1> 
-        <form>
-            <input type="text" id="buscar" placeholder="Find">
-            <button type="button" id="btnBuscar">Find</button>
-        </form>
         <div class="cajaForm"> 
             <div id="boton">
                 <button id="btnExplorar" class="btnes">Explore</button>  <br><br>  
                     <button id="btnOcultar" class="btnes">Hide</button>  <br><br>  
             </div>
+        <form class="find">
+            <button type="button" id="btnBuscar">Find</button>
+            <input type="text" id="buscar" placeholder="Find">
+        </form>
+        <div id="h">
+            <h1>Cat-rot guide</h1>
+        </div> 
     </section>
     <div id="opciones">
    
-        <div>
-      
-          <form>
-              <p>If you couldn't find the card you were looking for,
-                <br> you can add it here</p>
-              <input type="text" id="nameIn" name="nombreIn" placeholder="Card name"><br><br>
-              <input type="text" id="funcionIn" name="funcionIn" placeholder="Explanation"><br><br>
-          <button type="button" id="btnGuardar">Save</button>
-          </form>
-    
-          </div>
+        
     
 </header> 
 
-    
+<div>
+      
+    <form>
+        <p>If you couldn't find the card you were looking for,
+          <br> you can add it here</p>
+        <input type="text" id="nameIn" name="nombreIn" placeholder="Card name"><br><br>
+        <input type="text" id="funcionIn" name="funcionIn" placeholder="Explanation"><br><br>
+    <button type="button" id="btnGuardar">Save</button>
+    </form>
+
+    </div>
 
 <div id="listaCartas"></div>
 

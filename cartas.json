@@ -3,13 +3,13 @@
 {
 "nombre":"THE FOOL",
 "fun":"The Fool, the first card in the tarot, is a symbol of naivety and childlike wonder. This card is eager and ready to take a risk and start a new journey, always with a youthful spirit,astrologer and tarot practitioner Imani Quinn tells Bustle. Its also a reminder to proceed with caution", 
-"img":"Fool.jpg"
+"img":"fool.jpg"
 },
 
 {
        "nombre":"THE MAGICIAN",
     "fun":"The Magician reminds you of your ability to design your dream life. “You have all of the tools you need to manifest your desires, be ready to use whichever one is called for at any moment,” says Quinn.",
-    "img":"magician.jpg"
+    "img":"magic.jpg"
  },
 
 {
@@ -27,7 +27,7 @@
 {
     "nombre":"THE HIEROPHANT",
     "fun":"The Hierophant's stern and austere energy is about carrying legacy and traditions. “You might be asked to stick to the plan and not skip over any steps,” explains Marquardt. “It also has a lot to do with your belief systems, religious influences, and philosophies on life.”",
-    "img":"hierophant.jpg"
+    "img":"hiero.jpg"
 },
 
 {
@@ -37,14 +37,69 @@
 },
 
 {
-    "nombre":"THE PRIESTESS",
-    "fun":"The High Priestess invites you to follow your gut and accept what your inner knowing is already telling you. “Trust your intuition and see it as your superpower, allow yourself and others to move from an empowered intuitive place,” Quinn explains",
-    "img":"priestess.jpg"
+    "nombre":"THE MOON",
+    "fun":"The Moon card shows a full moon in the night’s sky, positioned between two large towers. The Moon is a symbol of intuition, dreams, and the unconscious. Its light is dim compared to the sun, and only slightly illuminates the path to higher consciousness winding between the two towers.",
+    "img":"moon.jpg"
 },
 
 {
     "nombre": "THE STRENGHT",
     "fun": "While the Strength card symbolizes grit and power,it’s also about generosity. “The Strength card is a very positive one that asks you to stay compassionate with yourself and others, and give where you can, because when you give of yourself you'll ultimately receive more in return,” Marquardt explains.",
-    "img": "strength.jpg"
+    "img": "stren.jpg"
+},
+
+{
+    "nombre":"THE JUSTICE",
+    "fun":"The Justice card advises you to listen carefully as others explain to you their version of events and the parts they played. It is unnecessary to offer feedback. Your role is to observe, listen closely, give a full hearing and keep your wits about you as the story takes shape.",
+    "img":"justice.jpg"
+},
+
+{
+    "nombre":"THE DEATH",
+    "fun":"The Death card reversed suggests that you might long for the cord to be cut, but unfortunately you have to persist and endure without the relief of an ending. It is not time for termination and closure yet.",
+    "img":"death.jpg"
+},
+
+{
+    "nombre":"THE DEVIL",
+    "fun":"The Devil card reversed suggests that you are enjoying creating chaos and resistance for no particular, positive reason. Your sense of humor could be a bit twisted. Your motive may be vengeance or you are simply being an irritant.",
+    "img":"devil.jpg"
+},
+
+{
+    "nombre":"THE TOWER",
+    "fun":"With the Tower card, think of yourself as an agent of transformation. This self-sacrificing role is likely to create stressful situations. Your vision shows you that a radical change has already been unleashed by forces much larger than mere mortals, and therefore you are no longer resisting.",
+    "img":"tower.jpg"
+},
+
+{
+    "nombre": "THE SUN",
+    "fun":"The Sun card advises you to have confidence in your natural divinity. Throw off any cultural conditioning that keeps you from being authentic with yourself. Step into the full light of truth and reveal your motives and principles. Once done, you will no longer give away power to the people that criticize and shame you. Focus on the positive and the real. Your authentic shining self can be a light for others if you project it without contrivance.",
+    "img":"sun.jpg"
+},
+
+{
+    "nombre":"THE STAR",
+    "fun":"The Star card advises that you rededicate yourself to your higher values, increase your spiritual cultivation and meditation practice, and surrender to the greater good. Connect to your higher self -- a being of a larger realm traveling on an evolutionary course that started long ago and runs indefinitely into the future. This is the part you wish to contact and communicate with.",
+    "img":"star.jpg"
+},
+
+{
+    "nombre":"THE JUDGEMENT",
+    "fun":"The Judgment card advises that you allow yourself to grow, transform, and release hidden potentials within yourself. Divest yourself of fruitless endeavors without neglecting your duties. At the same time, invest your energies in new growth.",
+    "img":"judgement.jpg"
+},
+
+{
+    "nombre":"THE WORLD",
+    "fun":"The World card may be giving you permission to do whatever you want. Presently, your motivation is close to the will of the divine. Even if you commit an error, it will be turned to the greater good. Stay active and just keep moving forward. It is unnecessary to keep checking or interrupting your spontaneity with calculation.",
+    "img":"world.jpg"
+},
+
+{
+    "nombre":"ACE of WANDS",
+    "fun":"The Two of Wands in this position advises you to respect your own decision making process. Instead of criticizing yourself for indecisiveness, appreciate the various implications of possible choices. Avoid pushing yourself to make a commitment.",
+    "img":"acewands1.jpg"
 }
+
 ]

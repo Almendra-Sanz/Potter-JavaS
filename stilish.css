@@ -35,19 +35,31 @@ ul {
         list-style: none;
          color: darkgray;
 }
+.cajaForm {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 
+}
+/* 
+section .titulos {
+    display: flex;
+    flex-direction: row;
 
-
+} */
 header {
     font-family:'Raleway', sans-serif;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
+    /* display: flex;
+    flex-direction: row; */
     color: darkgrey;
     margin-right: 5%;
     margin-left: 5%;
-    margin-top: 2%;
     
     
+}
+
+#h {
+    margin-left: 40%;
 }
 
 
@@ -104,3 +116,8 @@ input {
     font-family:'Raleway', sans-serif ;
 }
 
+
+form .find {
+    display: flex;
+    flex-direction: row;
+}

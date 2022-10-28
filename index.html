@@ -12,39 +12,52 @@
 </head>
 <body>
     <header>
-    <section class="titulos">
+    <nav id="navegar">
         <div class="cajaForm"> 
             <div id="boton">
                 <button id="btnExplorar" class="btnes">Explore</button>  <br><br>  
                     <button id="btnOcultar" class="btnes">Hide</button>  <br><br>  
+                    <form class="find">
+                        <button type="button" id="btnBuscar">Find</button>
+                        <input type="text" id="buscar" placeholder="Find">
+                    </form>
             </div>
-        <form class="find">
-            <button type="button" id="btnBuscar">Find</button>
-            <input type="text" id="buscar" placeholder="Find">
-        </form>
+       
         <div id="h">
             <h1>Cat-rot guide</h1>
         </div> 
-    </section>
-    <div id="opciones">
-   
-        
-    
+    </nav>
+    <div id="opciones">       
 </header> 
 
-<div>
-      
+<div class="fondo">
+    <div id="listaCartas"></div>
+</div>
+
+<div class="segundo">
+    <div class="parrafo">
+    <p id="bajada">If you couldn't find the card you were looking for,
+        <br> you can add it here</p>
+        </div>
+        <div class="forma">
     <form>
-        <p>If you couldn't find the card you were looking for,
-          <br> you can add it here</p>
         <input type="text" id="nameIn" name="nombreIn" placeholder="Card name"><br><br>
         <input type="text" id="funcionIn" name="funcionIn" placeholder="Explanation"><br><br>
     <button type="button" id="btnGuardar">Save</button>
     </form>
-
+</div>
     </div>
-
-<div id="listaCartas"></div>
+<!-- <div class="fondo">
+    <div id="listaCartas"></div>
+</div> -->
+ <footer>
+    <ul>
+        <li><h1 id="fot">Cat-rot</h1></li>
+        <li class="in"><a href="https://www.instagram.com/koan.tarot/?hl=es"><img src="assets/insta.png" alt="instagram" class="ins"></a></li>
+        <li class="in"><a href="https://ar.pinterest.com/search/pins/?q=cat%20rot&rs=typed"><img src="assets/pinteres.png" alt="pinteres" class="ins"></a></li>
+        
+    </ul>
+ </footer>
 
 
 

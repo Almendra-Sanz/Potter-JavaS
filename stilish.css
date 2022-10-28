@@ -2,22 +2,31 @@
 font-family: 'PT Sans', sans-serif;
 font-family: 'Raleway', sans-serif; */
 body {
-    background-color:#000000;
+    background-color:#22162C;
    
 }
- #boton {
+
+header {
+    font-family:'Raleway', sans-serif;
+    color: darkgrey;
+    margin-right: 5%;
+    margin-left: 5%;   
+}
+
+
+
+footer ul {
     display: flex;
     flex-direction: row;
-    margin-top: 4%;
- }
-
- #opciones {
-    margin-left: 20%;
- }
+    align-items: baseline;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
 
 h1 {
     font-family: 'DM Serif Display', serif;
     font-size: 7vh;
+    color:#FFFFFF;
 
 }
 
@@ -26,6 +35,8 @@ h2 {  font-size: 3vh;
 }
 
 p {  font-size: 3vh;
+    color: antiquewhite;
+    font-family: 'Raleway', sans-serif;
 }
 
 ul {
@@ -33,40 +44,99 @@ ul {
         margin-top: 6vh;
         font-family:'Raleway', sans-serif;
         list-style: none;
-         color: darkgray;
 }
+
+button {
+    border-radius: 15%;
+    background-color:#22162C;
+    font-family:'Raleway', sans-serif ;
+    font-size: 16px;
+    color: antiquewhite;
+    height: 6vh;
+    width: 100%;
+    border-color: #2D1342;
+     
+}
+
+input {
+    font-size: 16px;
+    width: 30vh;
+    height: 4vh;
+    background:#22162C;
+    font-family:'Raleway', sans-serif; 
+    color: antiquewhite; 
+   
+}
+#buscar {
+    margin-left: 2%;
+}
+
+#navegar {
+    margin-bottom: 0%;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#boton {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4%;
+    
+ }
+
+#opciones {
+    margin-left: 20%;
+ }
+
+
+#bajada {
+    font-size: 4vh;
+}
+
+#h {
+    width: 60%;
+    height: auto;
+    margin-left: 45%;
+}
+
+#listaCartas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10%;
+    margin-top: 5%;
+    align-items: baseline;
+    }
+    
+    
+#funcionIn {
+    height: 20vh;
+    margin-right: 2px;
+    }
+
+#fot {
+    color: #1C0F26;
+    font-size: 4vh;
+}
+
+
+.in {
+    margin-left: 8px;
+}
+
+.btnes {
+    margin-right: 1vh;
+    
+}
+
+
 .cajaForm {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    justify-content: space-between;
 
 }
-/* 
-section .titulos {
-    display: flex;
-    flex-direction: row;
 
-} */
-header {
-    font-family:'Raleway', sans-serif;
-    /* display: flex;
-    flex-direction: row; */
-    color: darkgrey;
-    margin-right: 5%;
-    margin-left: 5%;
-    
-    
-}
-
-#h {
-    margin-left: 40%;
-}
-
-
-/* label {
-    font-family:'Raleway', sans-serif;
-    color: darkgray;
-} */
 
 div .card-body {
     font-family:'Raleway', sans-serif;
@@ -75,49 +145,56 @@ div .card-body {
 }
 
 div .card-title {
-    font-size: 4vh;
+    font-size: 3vh;
 }
 
 
 div .img-fluid {
-    height: 100vh;
+    height: 70vh;
+    align-items: baseline;
     
 }
 
-#listaCartas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-margin-left: 10%;
-margin-top: 10%;
-align-items: center;
+
+
+.find {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    
+
 }
 
-button {
-    border-radius: 15%;
-    background-color:rgb(34, 32, 32);
-    font-family:'Raleway', sans-serif ;
-    font-size: 2vh;
-    color: antiquewhite;
-    height: 5vh;
+.segundo {
+    margin-top: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+
 }
 
-input {
-    width: 40vh;
+.forma {
+    background-color: #331948;
+    padding: 8%;
+    justify-content: center;
+    border-radius: 8%;
+
 }
-#funcionIn {
-    height: 20vh;
+
+.fondo {
+    background: #1C0F26;
+    padding-top: 1px;
 }
 
 .swal2-popup {
     font-size: 2vh !important;
   }
 
-  .swal2-title {
+.swal2-title {
     font-family:'Raleway', sans-serif ;
 }
 
-
-form .find {
-    display: flex;
-    flex-direction: row;
+.ins {
+    width: 4vh;
+    height: auto;
 }
